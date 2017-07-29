@@ -12,7 +12,6 @@ phases:
       - which mvn 
   build:
     commands:
-      - mvn test
       - mvn package
   
   post_build:
