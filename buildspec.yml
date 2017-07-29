@@ -1,23 +1,17 @@
 version: 0.1
 
-phases:
   install:
     commands:
-      - echo no commands
-  
+      - echo Nothing to do in the install phase...
   pre_build:
     commands:
-      - echo env dump 
-      - env
-      - which mvn 
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - mvn package
-  
+      - echo Build started on `date`
   post_build:
     commands:
       - echo Build completed on `date`
-      
 artifacts:
   files:
     - '**/*'
